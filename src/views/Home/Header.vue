@@ -13,7 +13,7 @@ export default {
 <style lang="less" scoped>
   header {
     background-color: black;
-    background-image: url('../../assets/images/desktop/image-hero.jpg');
+    background-image: url('../../assets/images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 95vh;
@@ -36,7 +36,7 @@ export default {
   @media screen and (min-width: 1000px ){
 
     header h1{
-      
+      background-image: url('../../assets/images/desktop/image-hero.jpg');
       font-size: 5rem;
       width: 45%;
       margin-right: 33%;
