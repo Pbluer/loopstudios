@@ -3,6 +3,15 @@
     <div class="navBar-logo">
       <h1>Loopstudios</h1>
       <button @click=" showNavBar = true " > &#x2630; </button>
+
+      <ul>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Carrers</a> </li>
+        <li> <a href="#">Events</a> </li>
+        <li> <a href="#">Products</a> </li>
+        <li> <a href="#">Support</a> </li>
+      </ul>
+
     </div>
   </div>
 
@@ -45,7 +54,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 50px;
-    background-color: rgb(0, 0, 0);
+    margin-top: 20px;   
   }
 
   .navBarMobile {
@@ -53,6 +62,10 @@ export default {
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
+
+    .navBar-logo {
+      margin-top: 20px;
+    }
 
     ul{
       text-align: left;
@@ -93,11 +106,48 @@ export default {
       background-color: transparent;
       border: none;
       color: #ffff;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-right: 10px;
+      cursor: pointer;
     }
-  }
 
-  
+    ul{
+      display: none;
+    }
+
+  } 
+
+  @media screen and ( min-width: 1000px ){
+
+    .navBar-logo {
+      
+      h1 {
+        margin-left: 5%;
+      }
+
+      button{
+        display: none;
+      }
+
+      ul {
+        display: inherit ;
+        margin-right: 5%;
+
+        li {
+          margin: 20px;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
 
 </style>

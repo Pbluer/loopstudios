@@ -13,10 +13,10 @@ export default {
 <style lang="less" scoped>
   header {
     background-color: black;
-    background-image: url('../../assets/images/mobile/image-hero.jpg');
+    background-image: url('../../assets/images/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 115vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,24 @@ export default {
       font-weight: 300;
       width: 260px;
     }
-
   }
+
+  @media screen and (min-width: 1000px ){
+
+    header h1{
+      
+      font-size: 5rem;
+      width: 45%;
+      margin-right: 33%;
+      padding: 3%;
+      br:nth-last-child(1){
+        display: none;
+      }
+      
+    }
+
+   
+
+  } 
+
 </style>

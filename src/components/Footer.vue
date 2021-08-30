@@ -65,4 +65,37 @@ export default {};
       font-size: 0.9rem;
     }
   }
+
+  @media screen and ( min-width: 1000px ){
+    footer {
+      display: flex;
+      height: 20vh;
+
+      .menu {
+        position: relative;
+        top: 30px;
+        right: 125px;
+        height: 30px;
+        display: inline-flex;
+        li {
+          margin: 20px;
+        }
+      }
+
+      .icon {
+        position: relative;
+         bottom: 20px;
+        left: 370px;
+      }
+
+      p {
+        height: 20px;
+        left: 120px;
+        position: relative;
+        top: 19px;
+      }
+    }
+
+  }
+  
 </style>
