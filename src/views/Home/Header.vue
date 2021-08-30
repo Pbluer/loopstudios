@@ -35,20 +35,20 @@ export default {
 
   @media screen and (min-width: 1000px ){
 
-    header h1{
+    header {
       background-image: url('../../assets/images/desktop/image-hero.jpg');
-      font-size: 5rem;
-      width: 45%;
-      margin-right: 33%;
-      padding: 3%;
-      br:nth-last-child(1){
-        display: none;
+    
+      h1{
+        font-size: 5rem;
+        width: 45%;
+        margin-right: 33%;
+        padding: 3%;
+        br:nth-last-child(1){
+          display: none;
+        }
       }
-      
-    }
 
-   
-
-  } 
+    } 
+  }
 
 </style>
